@@ -1,0 +1,30 @@
+import React, { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Home from './pages/Home'
+import Login from './pages/Login'
+import Register from './pages/Register'
+import SubmitComplaint from './pages/SubmitComplaint'
+import './App.css'
+
+function App() {
+  const [user, setUser] = useState(null)
+
+  return (
+    <div className="App">
+      <Header user={user} setUser={setUser} />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login setUser={setUser} />} />
+          <Route path="/register" element={<Register setUser={setUser} />} />
+          <Route path="/submit-complaint" element={<SubmitComplaint user={user} />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+  )
+}
+
+export default App
