@@ -1,16 +1,25 @@
 import React from 'react'
-import Hero from '../components/Hero'
 import Features from '../components/Features'
-import HowItWorks from '../components/HowItWorks'
 import Stats from '../components/Stats'
 import Link from "react-router-dom"
 const Home = () => {
   return (
     <>
-      <Hero />
+      <section className="hero" id="home">
+            <div className="container hero-content">
+              <h2>Welcome to the Circus of Wonders Grievance Tracker</h2>
+              <p>Your mobile city deserves to run as smoothly as the show itself. Report issues, track resolutions, and help keep our traveling community thriving.</p>
+              <div className="hero-buttons">
+                <Link to="/submit-complaint" className="btn">Report an Issue</Link>
+                <a href="#" className="btn btn-secondary">Track a Complaint</a>
+              </div>
+            </div>
+      </section>
+
       <Features />
       <HowItWorks />
       <Stats />
+      
       <section className="cta">
             <div className="container">
               <div className="cta-content">
