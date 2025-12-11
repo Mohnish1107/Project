@@ -1,5 +1,5 @@
 import React from 'react'
-import steps from '../assets/HowItWorks'
+import steps from '../../assets/HowItWorks'
 
 const HowItWorks = () => {
   return (

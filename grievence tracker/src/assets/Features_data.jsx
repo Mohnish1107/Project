@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Features = [
+const Features_data = [
     {
       icon: '📝',
       title: 'Complaint Submission',
@@ -32,4 +32,4 @@ const Features = [
       description: 'Monitor how long issues remain unresolved and highlight overdue complaints.'
     }
   ]
-  export default Features
+  export default Features_data

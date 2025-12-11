@@ -1,6 +1,6 @@
 import React from 'react'
-import Features from '../components/Features'
-import Stats from '../components/Stats'
+import Features from '../../components/Cards/Features'
+import Stats from '../../components/Cards/Stats'
 import Link from "react-router-dom"
 const Home = () => {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Navigate } from 'react-router-dom'
-import ComplaintForm from '../components/ComplaintForm'
+import ComplaintForm from '../../components/Forms/ComplaintForm'
 
 const SubmitComplaint = ({ user }) => {
   const [complaintSubmitted, setComplaintSubmitted] = useState(false)
